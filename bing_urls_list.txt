@@ -1,0 +1,51 @@
+Microsoft Bing Webmaster Tools - URL Submission List
+Domain: poe327.aithink.app
+Date: 2025-01-27
+Total URLs: 40
+
+=== MAIN PAGES ===
+https://poe327.aithink.app/
+https://poe327.aithink.app/index.html
+https://poe327.aithink.app/guides.html
+https://poe327.aithink.app/blog.html
+https://poe327.aithink.app/privacy-policy.html
+https://poe327.aithink.app/terms-and-conditions.html
+
+=== GUIDE PAGES (17 pages) ===
+https://poe327.aithink.app/guide-breach-modernization.html
+https://poe327.aithink.app/guide-genesis-tree.html
+https://poe327.aithink.app/guide-asynchronous-trading.html
+https://poe327.aithink.app/guide-class-balance-meta.html
+https://poe327.aithink.app/guide-economy-forecast.html
+https://poe327.aithink.app/guide-bloodline-ascendancies.html
+https://poe327.aithink.app/guide-new-skill-gems.html
+https://poe327.aithink.app/guide-beginner-complete.html
+https://poe327.aithink.app/guide-new-unique-items.html
+https://poe327.aithink.app/guide-pinnacle-bosses.html
+https://poe327.aithink.app/guide-graft-items-deep-dive.html
+https://poe327.aithink.app/guide-advanced-crafting.html
+https://poe327.aithink.app/guide-umbral-flames-breachlord.html
+https://poe327.aithink.app/guide-quality-of-life.html
+https://poe327.aithink.app/guide-map-strategy-atlas.html
+https://poe327.aithink.app/guide-trading-advanced.html
+https://poe327.aithink.app/guide-currency-investment.html
+
+=== BLOG ARTICLES (17 pages) ===
+https://poe327.aithink.app/blog/poe-3-27-breach-modernization-keepers-of-the-flame.html
+https://poe327.aithink.app/blog/poe-3-27-genesis-tree-long-term-growth.html
+https://poe327.aithink.app/blog/poe-3-27-async-trade-merchant-tabs.html
+https://poe327.aithink.app/blog/poe-3-27-class-balance-and-meta-shifts.html
+https://poe327.aithink.app/blog/poe-3-27-economy-currency-crafting-market.html
+https://poe327.aithink.app/blog/poe-3-27-bloodline-ascendancies.html
+https://poe327.aithink.app/blog/poe-3-27-new-skill-gems.html
+https://poe327.aithink.app/blog/poe-3-27-beginner-complete.html
+https://poe327.aithink.app/blog/poe-3-27-new-unique-items.html
+https://poe327.aithink.app/blog/poe-3-27-pinnacle-bosses.html
+https://poe327.aithink.app/blog/poe-3-27-graft-items-deep-dive.html
+https://poe327.aithink.app/blog/poe-3-27-advanced-crafting.html
+https://poe327.aithink.app/blog/poe-3-27-umbral-flames-breachlord.html
+https://poe327.aithink.app/blog/poe-3-27-quality-of-life.html
+https://poe327.aithink.app/blog/poe-3-27-map-strategy-atlas.html
+https://poe327.aithink.app/blog/poe-3-27-trading-advanced.html
+https://poe327.aithink.app/blog/poe-3-27-currency-investment.html
+
