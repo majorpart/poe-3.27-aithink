@@ -1,0 +1,34 @@
+{
+  "name": "poe-327-guide",
+  "version": "1.0.0",
+  "description": "PoE 3.27 'Keepers of the Flame' Complete Guide - Comprehensive guides and strategies for Path of Exile 3.27",
+  "main": "index.html",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "dev": "node server.js",
+    "start": "node server.js",
+    "vercel-dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": [
+    "path-of-exile",
+    "poe",
+    "poe-3-27",
+    "keepers-of-the-flame",
+    "breach",
+    "genesis-tree",
+    "graft-system",
+    "poe-guide",
+    "poe-build-guide",
+    "poe-strategy"
+  ],
+  "author": "PoE 3.27 Guide Team",
+  "license": "MIT"
+}

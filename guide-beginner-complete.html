@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoE 3.27 Beginner Complete Guide - Path of Exile 3.27 | poe327.aithink.app</title>
+    <meta name="description" content="Complete beginner's guide to Path of Exile 3.27 Keepers of the Flame, including character creation, leveling routes, currency basics, and recommended first builds.">
+    <meta name="keywords" content="PoE 3.27 beginner guide, Path of Exile new player, PoE 3.27 tutorial, getting started PoE">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://poe327.aithink.app/guide-beginner-complete.html">
+    <meta name="author" content="PoE 3.27 Guide">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PoE 3.27 Beginner Complete Guide">
+    <meta property="og:description" content="Everything new players need to know to get started in Path of Exile 3.27.">
+    <meta property="og:url" content="https://poe327.aithink.app/guide-beginner-complete.html">
+    <meta property="og:image" content="https://poe327.aithink.app/assets/images/poe327-guides (8).jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0a0a0a',
+                        'secondary-bg': '#252525',
+                        'card-bg': '#2d2d2d',
+                        'accent-flame': '#ff6600',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+        :root {
+            --primary-bg: #0a0a0a;
+            --secondary-bg: #252525;
+            --card-bg: #2d2d2d;
+            --border-dark: #404040;
+        }
+        body {
+            background-color: var(--primary-bg);
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8800 50%, #ffb84d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b" style="background-color: var(--secondary-bg); border-color: var(--border-dark);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center h-16 relative">
+                <div class="absolute left-0 flex items-center">
+                    <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                        <img src="assets/images/logo.png" alt="PoE 3.27 Guide Logo" class="w-12 h-12 mr-3">
+                        <span class="text-xl font-bold text-orange-500" style="font-family: 'Cinzel', serif;">PoE 3.27</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-orange-500 transition-colors" style="font-family: 'Cinzel', serif;">Home</a>
+                    <a href="guides.html" class="text-orange-500 font-semibold transition-colors" style="font-family: 'Cinzel', serif;">Guides</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-orange-500 transition-colors" style="font-family: 'Cinzel', serif;">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="pt-20 pb-4" style="background-color: var(--primary-bg); border-bottom: 1px solid var(--border-dark);">
+        <div class="max-w-4xl mx-auto px-4">
+            <nav class="text-sm text-gray-400">
+                <a href="index.html" class="hover:text-orange-400 transition-colors">Home</a>
+                <span class="mx-2 text-gray-600">/</span>
+                <a href="guides.html" class="hover:text-orange-400 transition-colors">Guides</a>
+                <span class="mx-2 text-gray-600">/</span>
+                <span class="text-gray-300">PoE 3.27 Beginner Guide</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="pt-12 pb-12" style="background-color: var(--primary-bg);">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="mb-6">
+                <span class="text-xs text-orange-400 font-semibold px-3 py-1 rounded" style="background-color: rgba(255, 102, 0, 0.1);">#Beginner Guide</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" style="font-family: 'Cinzel', serif;">
+                <span class="text-white">PoE 3.27</span>
+                <br>
+                <span class="gradient-text">Beginner Complete Guide</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Everything you need to know to start your journey in Path of Exile 3.27 "Keepers of the Flame"
+            </p>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <article class="max-w-4xl mx-auto px-4 pb-16">
+        <div class="prose prose-invert max-w-none" style="color: #e0e0e0;">
+            
+            <div class="mb-8">
+                <img src="assets/images/poe327-guides (8).jpg" alt="PoE 3.27 Beginner Complete Guide - Character Creation and Leveling" class="w-full rounded-lg">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Welcome to Path of Exile 3.27</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                <em>Path of Exile</em> 3.27 "Keepers of the Flame" is an excellent entry point for new players, with quality-of-life improvements and new systems that make the game more accessible. This guide will walk you through everything you need to know to get started.
+            </p>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Character Creation and Class Selection</h2>
+            
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Choosing Your Class</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Path of Exile has seven base classes, each with three Ascendancy subclasses. For beginners, we recommend:
+            </p>
+
+            <div class="bg-card-bg rounded-lg p-6 mb-6 border border-gray-700">
+                <h4 class="text-xl font-semibold text-white mb-4">🏹 Ranger (Deadeye, Raider, Pathfinder)</h4>
+                <p class="text-gray-300 mb-3">
+                    Excellent for beginners. Fast, mobile, and great clear speed. Deadeye is perfect for projectile-based builds.
+                </p>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                    <li>Easy to understand gameplay</li>
+                    <li>Good survivability through mobility</li>
+                    <li>Excellent for farming and mapping</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg rounded-lg p-6 mb-6 border border-gray-700">
+                <h4 class="text-xl font-semibold text-white mb-4">🔮 Witch (Elementalist, Occultist, Necromancer)</h4>
+                <p class="text-gray-300 mb-3">
+                    Powerful spellcasters with excellent damage. Elementalist is great for elemental builds, while Necromancer excels with minions.
+                </p>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                    <li>Strong damage output</li>
+                    <li>Many viable build options</li>
+                    <li>Good for learning spell mechanics</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg rounded-lg p-6 mb-6 border border-gray-700">
+                <h4 class="text-xl font-semibold text-white mb-4">⚔️ Marauder (Juggernaut, Berserker, Chieftain)</h4>
+                <p class="text-gray-300 mb-3">
+                    Tanky melee characters. Juggernaut is incredibly durable and forgiving for new players who make mistakes.
+                </p>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                    <li>High survivability</li>
+                    <li>Forgiving for beginners</li>
+                    <li>Simple melee gameplay</li>
+                </ul>
+            </div>
+
+            <div class="my-8">
+                <img src="assets/images/poe327-blog-guides (9).jpg" alt="Character Selection" class="w-full rounded-lg">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Early Game Leveling Route</h2>
+            
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Acts 1-5: The Foundation</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                The campaign consists of 10 acts, but you'll repeat Acts 1-5 twice (in different difficulties). Focus on:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li><strong class="text-orange-400">Complete main quests:</strong> Follow the main storyline to unlock important areas</li>
+                <li><strong class="text-orange-400">Pick up skill gems:</strong> Talk to NPCs in towns to get new skill gems</li>
+                <li><strong class="text-orange-400">Upgrade gear regularly:</strong> Replace old gear with better drops</li>
+                <li><strong class="text-orange-400">Learn the passive tree:</strong> Spend skill points carefully, follow a build guide if unsure</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Acts 6-10: Scaling Up</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                In the second half of the campaign, enemies become more dangerous:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li>Focus on getting resistances capped (75% for Fire, Cold, Lightning)</li>
+                <li>Complete your first Lab for Ascendancy points</li>
+                <li>Start planning your endgame build</li>
+                <li>Learn about map mechanics</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Currency System Basics</h2>
+            
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Path of Exile doesn't use gold. Instead, everything is a tradeable currency with actual functions:
+            </p>
+
+            <div class="bg-card-bg rounded-lg p-6 mb-6 border border-gray-700">
+                <h4 class="text-xl font-semibold text-white mb-4">Essential Currency Orbs</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><strong class="text-orange-400">Orb of Fusing:</strong> Links sockets in items (6-link = powerful!)</li>
+                    <li><strong class="text-orange-400">Chaos Orb:</strong> Re-rolls rare item properties - standard trading currency</li>
+                    <li><strong class="text-orange-400">Exalted Orb:</strong> Adds a new property to rare items - high value</li>
+                    <li><strong class="text-orange-400">Alchemy Orb:</strong> Turns normal items into rare items</li>
+                    <li><strong class="text-orange-400">Scroll of Wisdom:</strong> Identifies items (but PoE 3.27 has "Identify All" feature!)</li>
+                </ul>
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Recommended First Build</h2>
+            
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Deadeye Rain of Arrows</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                This build is perfect for beginners because it's:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li><strong class="text-orange-400">Easy to play:</strong> Point and click, arrows clear entire screens</li>
+                <li><strong class="text-orange-400">Budget friendly:</strong> Works well with self-found gear</li>
+                <li><strong class="text-orange-400">Fast:</strong> Great clear speed for farming</li>
+                <li><strong class="text-orange-400">Forgiving:</strong> Ranged attacks keep you safe</li>
+            </ul>
+
+            <div class="my-8">
+                <img src="assets/images/poe327-blog-guides (10).jpg" alt="Beginner Build" class="w-full rounded-lg">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Common Beginner Mistakes to Avoid</h2>
+            
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li><strong class="text-orange-400">Ignoring resistances:</strong> Get your resistances to 75% as soon as possible</li>
+                <li><strong class="text-orange-400">Not using a build guide:</strong> Follow a proven build guide for your first character</li>
+                <li><strong class="text-orange-400">Overvaluing damage:</strong> Survivability is often more important than pure damage</li>
+                <li><strong class="text-orange-400">Wasting currency:</strong> Don't use valuable orbs early - save them for endgame gear</li>
+                <li><strong class="text-orange-400">Skipping the Lab:</strong> Always complete your Labyrinth runs for Ascendancy points</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">PoE 3.27 New Features for Beginners</h2>
+            
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Identify All Feature</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                In PoE 3.27, town NPCs can identify all items in your inventory with one click - for free! This saves massive time and Scrolls of Wisdom.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Passive Reset System</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Made a mistake in your passive tree? PoE 3.27 allows you to completely reset your passive tree using currency - much more convenient than before!
+            </p>
+
+            <h3 class="text-2xl font-semibold text-orange-400 mt-8 mb-4">Asynchronous Trading</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Trading is now easier than ever. Other players can buy from your stash tabs even when you're offline!
+            </p>
+
+            <div class="my-8">
+                <img src="assets/images/poe327-blog-guides (11).jpg" alt="New Features" class="w-full rounded-lg">
+            </div>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Next Steps After Completing the Campaign</h2>
+            
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Once you finish Act 10, you'll enter the endgame:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+                <li>Start running maps to progress your Atlas</li>
+                <li>Complete your remaining Labyrinth runs for full Ascendancy</li>
+                <li>Farm currency to improve your gear</li>
+                <li>Explore the new <a href="guide-breach-modernization.html" class="text-orange-400 hover:text-orange-500 underline">Breach mechanics</a> and <a href="guide-genesis-tree.html" class="text-orange-400 hover:text-orange-500 underline">Genesis Tree</a></li>
+                <li>Consider unlocking a <a href="guide-bloodline-ascendancies.html" class="text-orange-400 hover:text-orange-500 underline">Bloodline Ascendancy</a> for dual-class builds</li>
+            </ul>
+
+            <h2 class="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                Path of Exile 3.27 "Keepers of the Flame" is an excellent time to start playing. With improved quality-of-life features, new systems like <a href="guide-bloodline-ascendancies.html" class="text-orange-400 hover:text-orange-500 underline">Bloodline Ascendancies</a> and the <a href="guide-genesis-tree.html" class="text-orange-400 hover:text-orange-500 underline">Genesis Tree</a>, and better trading, the game is more accessible than ever. Take your time, follow a build guide, and most importantly - have fun! Welcome to Wraeclast, exile!
+            </p>
+
+            <!-- Related Guides Section -->
+            <div class="mt-16 pt-8 border-t" style="border-color: var(--border-dark);">
+                <h2 class="text-2xl font-bold text-white mb-6">Related Guides</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="guide-breach-modernization.html" class="block p-4 rounded-lg border hover:border-orange-500 transition-all" style="background-color: var(--card-bg); border-color: var(--border-dark);">
+                        <h3 class="text-lg font-semibold text-white mb-2">Breach Modernization</h3>
+                        <p class="text-sm text-gray-400">Learn about the modernized Breach system</p>
+                    </a>
+                    <a href="guide-genesis-tree.html" class="block p-4 rounded-lg border hover:border-orange-500 transition-all" style="background-color: var(--card-bg); border-color: var(--border-dark);">
+                        <h3 class="text-lg font-semibold text-white mb-2">Genesis Tree & Graft System</h3>
+                        <p class="text-sm text-gray-400">Understand long-term progression systems</p>
+                    </a>
+                    <a href="guide-quality-of-life.html" class="block p-4 rounded-lg border hover:border-orange-500 transition-all" style="background-color: var(--card-bg); border-color: var(--border-dark);">
+                        <h3 class="text-lg font-semibold text-white mb-2">Quality of Life Features</h3>
+                        <p class="text-sm text-gray-400">Discover helpful QoL improvements</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Navigation Footer -->
+    <section class="py-12 border-t" style="background-color: var(--primary-bg); border-color: var(--border-dark);">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="guides.html" class="inline-flex items-center text-orange-400 hover:text-orange-500 transition-colors mb-4">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Guides
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-8" style="background-color: var(--primary-bg); border-color: var(--border-dark);">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">© 2025 PoE 3.27 Guide. All rights reserved.</p>
+            <p class="text-gray-600 text-xs mt-2">This is a fan site, not official. Path of Exile is a trademark of Grinding Gear Games.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

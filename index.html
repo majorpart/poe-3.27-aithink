@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<!-- Final deployment fix: Minimal config -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoE 3.27 "Keepers of the Flame" - Path of Exile 3.27 Complete Guide</title>
+    <meta name="description" content="Explore all new content in Path of Exile 3.27 "Keepers of the Flame": Breach modernization, Genesis Tree system, dual-class system, asynchronous trading, and more. Complete PoE 3.27 guide and deep analysis.">
+    <meta name="keywords" content="PoE 3.27, Path of Exile 3.27, Keepers of the Flame, Breach league, Genesis Tree, Graft system, Bloodline Ascendancies, asynchronous trading, PoE 3.27 guide, PoE 3.27 build guide, PoE 3.27 beginner guide, Path of Exile 3.27 tutorial">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="bingbot" content="index,follow">
+    <link rel="canonical" href="https://poe327.aithink.app/">
+    <meta name="author" content="PoE 3.27 Guide">
+    <meta name="publisher" content="PoE 3.27 Guide">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PoE 3.27 "Keepers of the Flame" - Path of Exile 3.27 Complete Guide">
+    <meta property="og:description" content="Explore all new content in Path of Exile 3.27 "Keepers of the Flame": Breach modernization, Genesis Tree system, dual-class system, asynchronous trading, and more.">
+    <meta property="og:url" content="https://poe327.aithink.app/">
+    <meta property="og:image" content="https://poe327.aithink.app/assets/images/poe327-home (6).jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PoE 3.27 "Keepers of the Flame" - Path of Exile 3.27 Complete Guide">
+    <meta name="twitter:description" content="Explore all new content in Path of Exile 3.27: Breach modernization, Genesis Tree system, dual-class system, asynchronous trading, and more.">
+    <meta name="twitter:image" content="https://poe327.aithink.app/assets/images/poe327-home (6).jpg">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0a0a0a',
+                        'secondary-bg': '#252525',
+                        'card-bg': '#2d2d2d',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#e0e0e0',
+                        'text-muted': '#999999',
+                        'accent-flame': '#ff6600',
+                        'accent-flame-hover': '#ff8800',
+                        'accent-gold': '#ffb84d',
+                        'border-dark': '#404040'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Optimized Google Fonts Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- System Font Stack, Matching PoE Official Site Style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <style>
+        /* PoE 3.27 Dark Theme Styles */
+        :root {
+            --primary-bg: #0a0a0a;
+            --secondary-bg: #252525;
+            --card-bg: #2d2d2d;
+            --text-primary: #ffffff;
+            --text-secondary: #e0e0e0;
+            --text-muted: #999999;
+            --accent-flame: #ff6600;
+            --accent-flame-hover: #ff8800;
+            --accent-gold: #ffb84d;
+            --border-dark: #404040;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Title Font - System fonts, optional Cinzel for large titles */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8800 50%, #ffb84d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-effect {
+            background: rgba(42, 42, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .upload-area {
+            border: 2px dashed #4a4a4a;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: var(--accent-orange);
+            background-color: rgba(255, 107, 53, 0.05);
+        }
+
+        .upload-area.dragover {
+            border-color: var(--accent-orange);
+            background-color: rgba(255, 107, 53, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--accent-flame), var(--accent-flame-hover));
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: linear-gradient(45deg, var(--accent-flame-hover), var(--accent-gold));
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 102, 0, 0.5);
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-dark);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-flame);
+            box-shadow: 0 20px 40px rgba(255, 102, 0, 0.2);
+        }
+
+        .btn-primary:disabled {
+            background: #4a4a4a;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .card {
+            background: var(--secondary-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial-card {
+            background: #f3e8ff; /* light purple */
+            border: 1px solid #e9d5ff; /* light purple border */
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            background: #7c3aed; /* purple on hover */
+            border-color: #7c3aed;
+        }
+
+        /* Ensure text turns readable on hover */
+        .testimonial-card:hover p,
+        .testimonial-card:hover h4,
+        .testimonial-card:hover span {
+            color: #ffffff !important;
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        .copy-success {
+            animation: copySuccess 0.5s ease-in-out;
+        }
+
+        @keyframes copySuccess {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); color: #4ade80; }
+            100% { transform: scale(1); }
+        }
+
+        /* RTL support for Arabic */
+        [dir="rtl"] {
+            text-align: right;
+        }
+
+        [dir="rtl"] .flex {
+            flex-direction: row-reverse;
+        }
+
+        /* Enhanced spacing and layout */
+        .section-padding {
+            padding: 6rem 2rem;
+        }
+        
+        
+        .container-max-width {
+            max-width: 1200px;
+        }
+        
+        .hero-section {
+            padding: 6rem 2rem 2rem;
+        }
+        
+        .feature-section {
+            padding: 2rem 2rem 2rem;
+        }
+        
+        .inspiration-section {
+            padding: 4rem 2rem;
+        }
+        
+        .tutorials-section {
+            padding: 4rem 2rem;
+        }
+        
+        .evaluation-section {
+            padding: 4rem 2rem;
+        }
+        
+        .faq-section {
+            padding: 4rem 2rem;
+        }
+        
+        .footer-section {
+            padding: 4rem 2rem 2rem;
+        }
+        
+        /* Testimonials Scroll Animation - Three Columns */
+        .testimonials-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            animation: scrollUp 40s linear infinite;
+        }
+        
+        .testimonials-column-1 {
+            animation: scrollUp1 35s linear infinite;
+        }
+        
+        .testimonials-column-2 {
+            animation: scrollUp2 45s linear infinite;
+        }
+        
+        .testimonials-column-3 {
+            animation: scrollUp3 40s linear infinite;
+        }
+        
+        .testimonials-column:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes scrollUp1 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        
+        @keyframes scrollUp2 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        
+        @keyframes scrollUp3 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        
+        .card-spacing {
+            margin-bottom: 2rem;
+        }
+        
+        .grid-gap-large {
+            gap: 3rem;
+        }
+        
+        .text-spacing {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .button-spacing {
+            margin: 2rem 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+                line-height: 1.2;
+                font-weight: 400;
+                letter-spacing: 0.01em;
+            }
+            
+            .section-padding {
+                padding: 4rem 1rem;
+            }
+            
+            .hero-section {
+                padding: 4rem 1rem 1.5rem;
+            }
+            
+            .feature-section {
+                padding: 1.5rem 1rem 1.5rem;
+            }
+            
+            .inspiration-section,
+            .tutorials-section,
+            .evaluation-section,
+            .faq-section {
+                padding: 3rem 1rem;
+            }
+            
+            .grid-gap-large {
+                gap: 2rem;
+            }
+            
+            /* Mobile testimonials scroll */
+            .testimonials-scroll-container {
+                height: 28rem; /* 448px */
+            }
+            
+            .testimonials-column-1 {
+                animation-duration: 25s; /* Faster on mobile */
+            }
+            
+            .testimonials-column-2 {
+                animation-duration: 35s; /* Faster on mobile */
+            }
+            
+            .testimonials-column-3 {
+                animation-duration: 30s; /* Faster on mobile */
+            }
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5822504482860674"
+         crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "tyryb7mpzp");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62WRTPQM28"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+
+      gtag('config', 'G-62WRTPQM28');
+    </script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PoE 3.27 Guide - Path of Exile 3.27 Keepers of the Flame",
+      "description": "PoE 3.27 'Keepers of the Flame' Complete Guide & Deep Analysis: Breach modernization, Genesis Tree system, dual-class system, asynchronous trading, and more.",
+      "url": "https://poe327.aithink.app/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PoE 3.27 Guide",
+        "url": "https://poe327.aithink.app"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://poe327.aithink.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body class="smooth-scroll bg-primary-bg text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b" style="background-color: var(--secondary-bg); border-color: var(--border-dark);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center h-16 relative">
+                <!-- Logo -->
+                <div class="absolute left-0 flex items-center">
+                    <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                        <img src="assets/images/logo.png" alt="PoE 3.27 Guide Logo" class="w-12 h-12 mr-3">
+                        <span class="text-xl font-bold text-orange-500" style="font-family: 'Cinzel', serif;">PoE 3.27</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Links - Centered -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-orange-500 transition-colors font-semibold" style="font-family: 'Cinzel', serif;">Home</a>
+                    <a href="guides.html" class="nav-link text-gray-300 hover:text-orange-500 transition-colors" style="font-family: 'Cinzel', serif;">Guides</a>
+                    <a href="blog.html" class="nav-link text-gray-300 hover:text-orange-500 transition-colors" style="font-family: 'Cinzel', serif;">Blog</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden absolute right-0">
+                    <button id="mobileMenuBtn" class="text-gray-300 hover:text-orange-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="nav-link text-orange-500 transition-colors py-2 font-semibold" style="font-family: 'Cinzel', serif;">Home</a>
+                    <a href="guides.html" class="nav-link text-gray-300 hover:text-orange-500 transition-colors py-2" style="font-family: 'Cinzel', serif;">Guides</a>
+                    <a href="blog.html" class="nav-link text-gray-300 hover:text-orange-500 transition-colors py-2" style="font-family: 'Cinzel', serif;">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+
+    <!-- Hero Section -->
+    <section class="pt-32 hero-section relative" style="background-image: url('assets/images/poe327-home (6).jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 600px;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <!-- Flame Effect Decorations -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-32 h-32 border-2 border-orange-500 border-opacity-20 rounded-full"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 border-2 border-orange-400 border-opacity-15 rounded-full"></div>
+            <div class="absolute bottom-32 left-32 w-20 h-20 border-2 border-orange-500 border-opacity-20 rounded-full"></div>
+            <div class="absolute bottom-20 right-10 w-40 h-40 border-2 border-orange-400 border-opacity-15 rounded-full"></div>
+        </div>
+        <div class="container-max-width mx-auto text-center fade-in relative z-10 py-20">
+            <h1 class="hero-title text-5xl md:text-7xl font-bold mb-6">
+                <span class="text-white">Path of Exile</span>
+                <br>
+                <span class="gradient-text">3.27</span>
+            </h1>
+            <h2 class="text-3xl md:text-5xl font-semibold text-white mb-8" style="font-family: 'Cinzel', serif;">
+                "Keepers of the Flame"
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 text-spacing max-w-3xl mx-auto">
+                Complete Guides & Deep Analysis
+            </p>
+            <p class="text-lg text-gray-300 opacity-90 max-w-2xl mx-auto mb-10">
+                Explore the redesigned Breach mechanics, Genesis Tree system, dual-class builds, and revolutionary asynchronous trading
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="guides.html" class="px-8 py-4 rounded-lg font-semibold text-white text-lg hover:shadow-lg transition-all duration-300" style="background: linear-gradient(45deg, #ff6600, #ff8800);">
+                    View All Guides
+                </a>
+                <a href="blog.html" class="px-8 py-4 border-2 border-orange-500 text-orange-400 rounded-lg font-semibold text-lg hover:bg-orange-500 hover:text-white transition-all duration-300">
+                    Browse Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Path of Exile? Section -->
+    <section id="what-is-poe" class="py-20" style="background-color: var(--primary-bg);">
+        <div class="container-max-width mx-auto px-4">
+            <div class="max-w-5xl mx-auto text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold mb-6 text-white">What is Path of Exile?</h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Path of Exile is a dark fantasy hardcore action role-playing game (ARPG), widely regarded as the spiritual successor to Diablo 2.
+                </p>
+                <p class="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto">
+                    Driven by loot hunting, players defeat monsters for better gear, challenge harder maps, and enjoy character progression with the thrill of discovering ultra-rare items.
+                </p>
+            </div>
+
+            <!-- Core Positioning Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
+                <div class="card rounded-lg p-6 text-center">
+                    <div class="text-4xl mb-4">⚔️</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Dark Fantasy Hardcore ARPG</h3>
+                    <p class="text-gray-400">Dark aesthetic, complex narrative, and deep hardcore gameplay experience</p>
+                </div>
+                <div class="card rounded-lg p-6 text-center">
+                    <div class="text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Diablo 2 Spiritual Successor</h3>
+                    <p class="text-gray-400">Inherits D2's deep item system and loot-driven gameplay, elevated to new complexity</p>
+                </div>
+                <div class="card rounded-lg p-6 text-center">
+                    <div class="text-4xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Map-Driven Gameplay</h3>
+                    <p class="text-gray-400">Defeat monsters for gear → Challenge harder maps → Discover ultra-rare items</p>
+                </div>
+            </div>
+
+            <!-- Four Core Features -->
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-3xl font-bold text-center mb-12 text-white">Core Features</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- 1. Massive Passive Skill Tree -->
+                    <div class="card rounded-lg p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-5xl">🌳</div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-white mb-4">Massive Passive Skill Tree</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• Over 1,000 nodes in a constellation-style skill tree</li>
+                                    <li>• Each class starts differently but can reach any node</li>
+                                    <li>• Near-infinite possibilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Skill Gem System -->
+                    <div class="card rounded-lg p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-5xl">💎</div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-white mb-4">Skill Gem System</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• Skills are not class-bound, obtained through skill gems</li>
+                                    <li>• Modify skill behavior with support gems</li>
+                                    <li>• Examples: Fireball becomes multiple projectiles, auto-aim, poison effects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Massive Item & Currency System -->
+                    <div class="card rounded-lg p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-5xl">💰</div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-white mb-4">Massive Item & Currency System</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• No gold—all currency is functional orbs</li>
+                                    <li>• Extremely rich equipment affixes</li>
+                                    <li>• Ultimate goal: Obtain or craft "mirror-tier" equipment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. League System (Seasons) -->
+                    <div class="card rounded-lg p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-5xl">🔥</div>
+                            <div>
+                                <h4 class="text-2xl font-semibold text-white mb-4">League System (Seasons)</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li>• New league every 3-4 months</li>
+                                    <li>• Fresh mechanics, content, and rewards</li>
+                                    <li>• <span class="text-orange-500 font-semibold">PoE 3.27 is such a new league</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PoE 3.27 Unique Features Section -->
+    <section id="poe-327-features" class="py-20" style="background-color: var(--secondary-bg);">
+        <div class="container-max-width mx-auto px-4">
+            <!-- Version Overview Banner -->
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold mb-4 text-white">PoE 3.27 "Keepers of the Flame"</h2>
+                <p class="text-xl text-orange-400 mb-2">Release Date: October 31, 2024 (PC)</p>
+                <p class="text-lg text-gray-400">A comprehensive, highly free-form loot-driven ARPG update</p>
+            </div>
+
+            <!-- Core New Content -->
+            <div class="max-w-6xl mx-auto mb-16">
+                <h3 class="text-3xl font-bold text-center mb-12 text-white">Core New Content</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- New Challenge League -->
+                    <div class="card rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl mr-4">🔥</div>
+                            <h4 class="text-2xl font-semibold text-white">New Challenge League</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• <strong class="text-orange-400">Keepers of the Flame League</strong>: Fight Breachlords, protect Ailith, use "Umbral Flames" to cleanse Breach corruption</li>
+                            <li>• <strong class="text-orange-400">Genesis Tree & Grafts</strong>: Cultivate the "Genesis Tree" in the monastery to earn rewards and new Graft items, providing new passive bonuses and active skills</li>
+                        </ul>
+                    </div>
+
+                    <!-- New Skills & Items -->
+                    <div class="card rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl mr-4">⚡</div>
+                            <h4 class="text-2xl font-semibold text-white">New Skills & Items</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• New skill gems (Conflagration, Thunderstorm, Somatic Shell, etc.)</li>
+                            <li>• Over 20 new unique items</li>
+                            <li>• New wand and ring base types</li>
+                            <li>• 5 new divination cards</li>
+                        </ul>
+                    </div>
+
+                    <!-- Endgame Expansion -->
+                    <div class="card rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl mr-4">👑</div>
+                            <h4 class="text-2xl font-semibold text-white">Endgame Expansion</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• <strong class="text-orange-400">Bloodline Ascendancies</strong>: Unlock a second ascendancy class by defeating specific endgame bosses, combining with your original class for more build possibilities</li>
+                            <li>• <strong class="text-orange-400">New Pinnacle Bosses</strong>: Three new Pinnacle Atlas Memory Bosses</li>
+                        </ul>
+                    </div>
+
+                    <!-- Major Quality Improvements -->
+                    <div class="card rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl mr-4">✨</div>
+                            <h4 class="text-2xl font-semibold text-white">Major Quality Improvements</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-300">
+                            <li>• <strong class="text-orange-400">Asynchronous Trading</strong>: Through specific stash tabs, other players can directly purchase your listed items, completing trades even when you're offline</li>
+                            <li>• <strong class="text-orange-400">Identify All</strong>: Town NPCs can identify all items in your inventory with one click for free, no Scroll of Wisdom needed</li>
+                            <li>• <strong class="text-orange-400">Passive Reset</strong>: Use currency to completely reset your character's passive skill tree or Atlas passive tree with one click</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Display -->
+            <div class="max-w-5xl mx-auto">
+                <h3 class="text-3xl font-bold text-center mb-12 text-white">PoE 3.27 vs Previous Versions</h3>
+                <div class="card rounded-lg p-8 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-gray-600">
+                                <th class="pb-4 pr-6 text-white font-semibold">Feature</th>
+                                <th class="pb-4 pr-6 text-orange-400 font-semibold">PoE 3.27</th>
+                                <th class="pb-4 text-gray-400 font-semibold">Previous Versions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 pr-6 font-medium">Breach Mechanics</td>
+                                <td class="py-4 pr-6">Fully modernized with multiple variants</td>
+                                <td class="py-4">Classic Breach</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 pr-6 font-medium">Graft System</td>
+                                <td class="py-4 pr-6">New long-term progression system</td>
+                                <td class="py-4">None</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 pr-6 font-medium">Trading Method</td>
+                                <td class="py-4 pr-6">Asynchronous trading</td>
+                                <td class="py-4">Online trading required</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 pr-6 font-medium">Item Identification</td>
+                                <td class="py-4 pr-6">Identify all with one click</td>
+                                <td class="py-4">Requires scrolls for each item</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="py-4 pr-6 font-medium">Class System</td>
+                                <td class="py-4 pr-6">Dual-class Ascendancy</td>
+                                <td class="py-4">Single class</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 pr-6 font-medium">Genesis Tree</td>
+                                <td class="py-4 pr-6">Brand new long-term progression</td>
+                                <td class="py-4">None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Content & Updates Section -->
+    <section id="latest-content" class="py-20" style="background-color: var(--primary-bg);">
+        <div class="container-max-width mx-auto px-4">
+            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mb-6 text-white">Latest Content & Updates</h2>
+            <p class="text-xl text-gray-300 text-center mb-12 max-w-3xl mx-auto">
+                Explore complete guides for PoE 3.27, from Breach modernization to Genesis Tree system, from build strategies to economic analysis
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Guide 1: Breach Modernization -->
+                <a href="guide-breach-modernization.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="assets/images/poe327-guides (1).jpg" alt="Breach Modernization Complete Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-orange-400 font-semibold">#Core Mechanics</span>
+                            <span class="text-xs text-gray-400">Guide</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Breach Modernization Complete Guide</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">In-depth analysis of the fully modernized Breach mechanics in PoE 3.27, including various variants, Unstable Breaches, and new reward systems</p>
+                    </div>
+                </a>
+
+                <!-- Guide 2: Genesis Tree -->
+                <a href="guide-genesis-tree.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="assets/images/poe327-guides (2).jpg" alt="Genesis Tree Ultimate Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-orange-400 font-semibold">#Long-term Progression</span>
+                            <span class="text-xs text-gray-400">Guide</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Genesis Tree Ultimate Guide</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Master the new Genesis Tree system, learn how to cultivate Graft items and gain powerful passive and active effects</p>
+                    </div>
+                </a>
+
+                <!-- Guide 3: Asynchronous Trading -->
+                <a href="guide-asynchronous-trading.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="assets/images/poe327-guides (3).jpg" alt="Asynchronous Trading System Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-orange-400 font-semibold">#Economy & Trading</span>
+                            <span class="text-xs text-gray-400">Guide</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Asynchronous Trading System Guide</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Learn about PoE 3.27's revolutionary asynchronous trading system that allows trades even when offline</p>
+                    </div>
+                </a>
+
+                <!-- Guide 4: Class Balance -->
+                <a href="guide-class-balance-meta.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="assets/images/poe327-guides (4).jpg" alt="Class Balance & Meta Changes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-orange-400 font-semibold">#Build & Strategy</span>
+                            <span class="text-xs text-gray-400">Guide</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Class Balance & Meta Changes</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Deep analysis of PoE 3.27's class balance changes and meta trends, predicting rising builds</p>
+                    </div>
+                </a>
+
+                <!-- Guide 5: Economy Forecast -->
+                <a href="guide-economy-forecast.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="assets/images/poe327-guides (5).jpg" alt="Economy & Crafting Market Forecast" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-orange-400 font-semibold">#Economy Analysis</span>
+                            <span class="text-xs text-gray-400">Guide</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Economy & Crafting Market Forecast</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Predict currency and crafting market changes in PoE 3.27, seize economic opportunities</p>
+                    </div>
+                </a>
+
+                <!-- View All Guides -->
+                <a href="guides.html" class="card rounded-lg overflow-hidden block hover:scale-105 transition-transform duration-300 border-2 border-dashed border-orange-500">
+                    <div class="p-12 text-center flex flex-col items-center justify-center h-full">
+                        <div class="text-5xl mb-4">📚</div>
+                        <h3 class="text-2xl font-semibold text-white mb-3">View All Guides</h3>
+                        <p class="text-gray-400 mb-6">Explore more PoE 3.27 deep content</p>
+                        <span class="text-orange-400 font-semibold">Enter Guide Center →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="py-20" style="background: linear-gradient(135deg, rgba(255, 102, 0, 0.1) 0%, rgba(255, 136, 0, 0.1) 100%);">
+        <div class="container-max-width mx-auto px-4 text-center">
+            <h2 class="section-title text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Dive Deep into PoE 3.27?</h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                From beginner guides to advanced strategies, from core mechanics to economic analysis, all the guides you need are here
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="guides.html" class="px-10 py-5 rounded-lg font-semibold text-white text-lg hover:shadow-lg transition-all duration-300" style="background: linear-gradient(45deg, #ff6600, #ff8800);">
+                    View All Guides
+                </a>
+                <a href="blog.html" class="px-10 py-5 border-2 border-orange-500 text-orange-400 rounded-lg font-semibold text-lg hover:bg-orange-500 hover:text-white transition-all duration-300">
+                    Browse Blog Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section border-t" style="background-color: var(--primary-bg); border-color: var(--border-dark);">
+        <div class="container-max-width mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Site Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                            <img src="assets/images/logo.png" alt="PoE 3.27 Guide Logo" class="w-12 h-12 mr-3">
+                            <span class="text-xl font-bold text-orange-500" style="font-family: 'Cinzel', serif;">PoE 3.27</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-4 text-sm">PoE 3.27 "Keepers of the Flame" Complete Guides & Deep Analysis</p>
+                    <p class="text-gray-500 text-xs">poe327.aithink.app</p>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Navigation</h3>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-gray-400 hover:text-orange-400 transition-colors">Home</a>
+                        <a href="guides.html" class="block text-gray-400 hover:text-orange-400 transition-colors">Guides</a>
+                        <a href="blog.html" class="block text-gray-400 hover:text-orange-400 transition-colors">Blog</a>
+                    </div>
+                </div>
+
+                <!-- PoE Resources (Optional) -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">PoE Resources</h3>
+                    <div class="space-y-2">
+                        <a href="https://www.pathofexile.com/" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-orange-400 transition-colors">Path of Exile Official Site</a>
+                        <a href="https://www.pathofexile.com/forum" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-orange-400 transition-colors">Official Forums</a>
+                    </div>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Legal</h3>
+                    <div class="space-y-2">
+                        <a href="privacy-policy.html" class="block text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
+                        <a href="terms-and-conditions.html" class="block text-gray-400 hover:text-orange-400 transition-colors">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t mt-8 pt-8 text-center" style="border-color: var(--border-dark);">
+                <p class="text-gray-500 text-sm">© 2025 PoE 3.27 Guide. All rights reserved.</p>
+                <p class="text-gray-600 text-xs mt-2">This is a fan site, not official. Path of Exile is a trademark of Grinding Gear Games.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Success Toast -->
+    <div id="successToast" class="fixed top-20 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 hidden">
+        <span data-translate="copy-success">Copy successful!</span>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="errorToast" class="fixed top-20 right-4 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 hidden">
+        <span id="errorMessage">An error occurred. Please try again.</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerNav = document.querySelector('nav.fixed');
+            if (!headerNav) return;
+            // Only select middle navigation links, avoid affecting left logo link
+            const navLinks = Array.from(headerNav.querySelectorAll('.nav-link'));
+            const home = navLinks.find(a => (a.getAttribute('href') || '').endsWith('index.html'));
+            const guides = navLinks.find(a => (a.getAttribute('href') || '').endsWith('guides.html'));
+            const blog = navLinks.find(a => (a.getAttribute('href') || '').endsWith('blog.html'));
+            const links = [home, guides, blog].filter(Boolean);
+            const activate = (el) => {
+                links.forEach(a => a && a.classList.remove('text-orange-500','font-semibold'));
+                if (el) el.classList.add('text-orange-500','font-semibold');
+            };
+            const path = location.pathname.toLowerCase();
+            if (path.endsWith('guides.html')) activate(guides);
+            else if (path.endsWith('blog.html') || path.includes('/blog/')) activate(blog);
+            else activate(home);
+        });
+    </script>
+    
+</body>
+</html>

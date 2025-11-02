@@ -1,0 +1,65 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /js/
+Allow: /api/
+Allow: /blog/
+Allow: /blog.html
+Allow: /guides.html
+Allow: /guide-*.html
+Allow: /index.html
+
+# Disallow ads and tracking scripts
+Disallow: /ads/
+Disallow: /*.ads
+Disallow: /tracking/
+
+# Disallow temporary files and cache
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /*.tmp
+Disallow: /*.log
+
+# Sitemaps (Updated for PoE 3.27 Guide)
+Sitemap: https://poe327.aithink.app/sitemap.xml
+
+# Optimize crawl frequency
+Crawl-delay: 1
+
+# Special permissions for Googlebot
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
+Allow: /js/
+Allow: /api/
+Allow: /blog/
+Allow: /blog.html
+Allow: /guides.html
+Allow: /guide-*.html
+Allow: /index.html
+Allow: /privacy-policy.html
+Allow: /terms-and-conditions.html
+
+# Allow Bingbot access
+User-agent: Bingbot
+Allow: /
+Allow: /assets/
+Allow: /js/
+Allow: /api/
+Allow: /blog/
+Allow: /blog.html
+Allow: /guides.html
+Allow: /guide-*.html
+Allow: /index.html
+
+# Allow Baidu spider access
+User-agent: Baiduspider
+Allow: /
+Allow: /assets/
+Allow: /js/
+Allow: /api/
+Allow: /blog/
+Allow: /blog.html
+Allow: /guides.html
+Allow: /guide-*.html
+Allow: /index.html
