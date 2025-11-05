@@ -119,10 +119,9 @@ export default function GuidesPage({ guides }) {
                                     />
                                 </div>
                                 <div className="p-6">
-                                    <div className="flex items-center justify-between mb-3">
-                                        <span className="text-xs text-orange-400 font-semibold px-2 py-1 rounded" style={{ backgroundColor: 'rgba(255, 102, 0, 0.1)' }}>#{guide.category}</span>
-                                        <span className="text-xs text-gray-400">PoE 3.27 Guide</span>
-                                    </div>
+                                            <div className="flex items-center justify-between mb-3">
+                                                <span className="text-xs text-orange-400 font-semibold px-2 py-1 rounded" style={{ backgroundColor: 'rgba(255, 102, 0, 0.1)' }}>#{guide.category}</span>
+                                            </div>
                                     <h3 className="text-xl font-semibold text-white mb-3">{guide.title}</h3>
                                     <p className="text-gray-400 text-sm leading-relaxed">{guide.description}</p>
                                 </div>

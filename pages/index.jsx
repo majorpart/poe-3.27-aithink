@@ -31,10 +31,10 @@ export default function Home({ guides }) {
     return (
         <>
             <SEOHead
-                title='PoE 3.27 "Keepers of the Flame" Complete Guide - Path of Exile 3.27'
-                description='Complete guides and deep analysis for Path of Exile 3.27 "Keepers of the Flame". Explore Breach modernization, Genesis Tree system, dual-class builds, and asynchronous trading in PoE 3.27.'
+                title='PoE 3.27 Keepers of the Flame - Complete Guide'
+                description='Complete PoE 3.27 guides: Breach modernization, Genesis Tree, dual-class builds, asynchronous trading. Master Path of Exile 3.27 Keepers of the Flame.'
                 url="/"
-                keywords="PoE 3.27, Path of Exile 3.27, Keepers of the Flame, PoE guide, PoE 3.27 guide, Breach, Genesis Tree, Graft system"
+                keywords="PoE 3.27, Path of Exile 3.27, Keepers of the Flame, PoE guide, Breach, Genesis Tree"
                 canonical={`${siteUrl}/`}
             />
             <Navigation />
@@ -317,10 +317,9 @@ export default function Home({ guides }) {
                                     />
                                 </div>
                                 <div className="p-6">
-                                    <div className="flex items-center justify-between mb-3">
-                                        <span className="text-xs text-orange-400 font-semibold">#{guide.category}</span>
-                                        <span className="text-xs text-gray-400">PoE 3.27 Guide</span>
-                                    </div>
+                        <div className="flex items-center justify-between mb-3">
+                            <span className="text-xs text-orange-400 font-semibold">#{guide.category}</span>
+                        </div>
                                     <h3 className="text-xl font-semibold text-white mb-3">{guide.title}</h3>
                                     <p className="text-gray-400 text-sm leading-relaxed">{guide.description}</p>
                                 </div>
