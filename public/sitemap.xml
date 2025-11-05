@@ -4,7 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- PoE 3.27 Guide Sitemap - Updated for poe327.aithink.app -->
+<!-- PoE 3.27 Guide Sitemap - Updated for poe327.aithink.app (Next.js Clean URLs) -->
 
 <!-- Main Pages -->
 <url>
@@ -13,75 +13,69 @@
   <priority>1.00</priority>
   <changefreq>weekly</changefreq>
 </url>
-<url>
-  <loc>https://poe327.aithink.app/index.html</loc>
-  <lastmod>2025-01-27T00:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-  <changefreq>weekly</changefreq>
-</url>
 
 <!-- Navigation Pages -->
 <url>
-  <loc>https://poe327.aithink.app/guides.html</loc>
+  <loc>https://poe327.aithink.app/guides</loc>
   <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   <priority>0.95</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://poe327.aithink.app/blog.html</loc>
+  <loc>https://poe327.aithink.app/blog</loc>
   <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   <priority>0.90</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://poe327.aithink.app/privacy-policy.html</loc>
+  <loc>https://poe327.aithink.app/privacy-policy</loc>
   <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   <priority>0.60</priority>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>https://poe327.aithink.app/terms-and-conditions.html</loc>
+  <loc>https://poe327.aithink.app/terms-and-conditions</loc>
   <lastmod>2025-01-27T00:00:00+00:00</lastmod>
   <priority>0.60</priority>
   <changefreq>yearly</changefreq>
 </url>
 
-<!-- Guide Pages -->
-<url><loc>https://poe327.aithink.app/guide-breach-modernization.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-genesis-tree.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-asynchronous-trading.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-class-balance-meta.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-economy-forecast.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-bloodline-ascendancies.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-new-skill-gems.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-beginner-complete.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-new-unique-items.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-pinnacle-bosses.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-graft-items-deep-dive.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-advanced-crafting.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-umbral-flames-breachlord.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-quality-of-life.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-map-strategy-atlas.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-trading-advanced.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/guide-currency-investment.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<!-- Guide Pages (17 guides) -->
+<url><loc>https://poe327.aithink.app/guides/breach-modernization</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/genesis-tree</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/asynchronous-trading</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/class-balance-meta</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/economy-forecast</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/bloodline-ascendancies</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/new-skill-gems</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/beginner-complete</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.90</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/new-unique-items</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/pinnacle-bosses</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/graft-items-deep-dive</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/advanced-crafting</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/umbral-flames-breachlord</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/quality-of-life</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/map-strategy-atlas</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/trading-advanced</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/guides/currency-investment</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq></url>
 
-<!-- Blog Articles -->
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-breach-modernization-keepers-of-the-flame.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-genesis-tree-long-term-growth.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-async-trade-merchant-tabs.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-class-balance-and-meta-shifts.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-economy-currency-crafting-market.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-bloodline-ascendancies.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-new-skill-gems.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-beginner-complete.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-new-unique-items.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-pinnacle-bosses.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-graft-items-deep-dive.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-advanced-crafting.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-umbral-flames-breachlord.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-quality-of-life.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-map-strategy-atlas.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-trading-advanced.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
-<url><loc>https://poe327.aithink.app/blog/poe-3-27-currency-investment.html</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<!-- Blog Articles (17 articles) -->
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-breach-modernization-keepers-of-the-flame</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-async-trade-merchant-tabs</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-class-balance-and-meta-shifts</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-economy-currency-crafting-market</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-genesis-tree-long-term-growth</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-bloodline-ascendancies</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-new-skill-gems</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-beginner-complete</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-new-unique-items</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-pinnacle-bosses</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-graft-items-deep-dive</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-advanced-crafting</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-umbral-flames-breachlord</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-quality-of-life</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-map-strategy-atlas</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-trading-advanced</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
+<url><loc>https://poe327.aithink.app/blog/poe-3-27-currency-investment</loc><lastmod>2025-01-27T00:00:00+00:00</lastmod><priority>0.80</priority><changefreq>monthly</changefreq></url>
 
 </urlset>

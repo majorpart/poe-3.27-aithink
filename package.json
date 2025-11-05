@@ -1,21 +1,27 @@
 {
   "name": "poe-327-guide",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "PoE 3.27 'Keepers of the Flame' Complete Guide - Comprehensive guides and strategies for Path of Exile 3.27",
-  "main": "index.html",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "echo 'No build step required'",
-    "dev": "node server.js",
-    "start": "node server.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "convert-images": "node scripts/convert-images-sharp.js",
     "vercel-dev": "vercel dev",
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   },
   "keywords": [
     "path-of-exile",

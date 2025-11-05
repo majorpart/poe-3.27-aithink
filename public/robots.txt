@@ -1,13 +1,10 @@
 User-agent: *
 Allow: /
 Allow: /assets/
-Allow: /js/
-Allow: /api/
 Allow: /blog/
-Allow: /blog.html
-Allow: /guides.html
-Allow: /guide-*.html
-Allow: /index.html
+Allow: /guides/
+Allow: /privacy-policy
+Allow: /terms-and-conditions
 
 # Disallow ads and tracking scripts
 Disallow: /ads/
@@ -20,6 +17,12 @@ Disallow: /cache/
 Disallow: /*.tmp
 Disallow: /*.log
 
+# Disallow API routes (internal use only)
+Disallow: /api/
+
+# Disallow old HTML files (legacy - Next.js uses clean URLs)
+Disallow: /*.html
+
 # Sitemaps (Updated for PoE 3.27 Guide)
 Sitemap: https://poe327.aithink.app/sitemap.xml
 
@@ -30,36 +33,28 @@ Crawl-delay: 1
 User-agent: Googlebot
 Allow: /
 Allow: /assets/
-Allow: /js/
-Allow: /api/
 Allow: /blog/
-Allow: /blog.html
-Allow: /guides.html
-Allow: /guide-*.html
-Allow: /index.html
-Allow: /privacy-policy.html
-Allow: /terms-and-conditions.html
+Allow: /guides/
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Disallow: /api/
 
 # Allow Bingbot access
 User-agent: Bingbot
 Allow: /
 Allow: /assets/
-Allow: /js/
-Allow: /api/
 Allow: /blog/
-Allow: /blog.html
-Allow: /guides.html
-Allow: /guide-*.html
-Allow: /index.html
+Allow: /guides/
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Disallow: /api/
 
 # Allow Baidu spider access
 User-agent: Baiduspider
 Allow: /
 Allow: /assets/
-Allow: /js/
-Allow: /api/
 Allow: /blog/
-Allow: /blog.html
-Allow: /guides.html
-Allow: /guide-*.html
-Allow: /index.html
+Allow: /guides/
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Disallow: /api/
