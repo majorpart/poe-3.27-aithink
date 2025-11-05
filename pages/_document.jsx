@@ -19,12 +19,6 @@ export default function Document() {
                 <meta name="theme-color" content="#0a0a0a" />
                 <meta name="msapplication-TileColor" content="#0a0a0a" />
                 
-                {/* Google AdSense - 全局加载 */}
-                <script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5822504482860674"
-                    crossOrigin="anonymous"
-                />
             </Head>
             <body>
                 <Main />

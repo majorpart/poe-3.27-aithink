@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import '../styles/globals.css';
+import { Cinzel } from 'next/font/google';
+
+const cinzel = Cinzel({ subsets: ['latin'], weight: ['600','700'], display: 'swap' });
 
 export default function App({ Component, pageProps }) {
     return (
@@ -10,10 +13,6 @@ export default function App({ Component, pageProps }) {
                     name="viewport" 
                     content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" 
                 />
-                {/* Google Fonts */}
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-                <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet" />
                 {/* 为 FundingChoices 预连接，减少握手延迟 */}
                 <link rel="preconnect" href="https://fundingchoicesmessages.google.com" />
             </Head>
@@ -50,7 +49,9 @@ export default function App({ Component, pageProps }) {
                 src="https://cdn.tailwindcss.com"
                 strategy="beforeInteractive"
             />
-            <Component {...pageProps} />
+            <div className={cinzel.className}>
+                <Component {...pageProps} />
+            </div>
         </>
     );
 }
