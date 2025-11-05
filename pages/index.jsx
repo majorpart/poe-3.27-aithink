@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import AdSense from '../components/AdSense';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export async function getServerSideProps(context) {
     try {
@@ -30,6 +31,16 @@ export default function Home({ guides }) {
     
     return (
         <>
+            {/* 预加载首屏大图，优化 LCP */}
+            <Head>
+                <link
+                    rel="preload"
+                    as="image"
+                    href="/assets/images/poe327-home%20(6).webp"
+                    imagesrcset="/assets/images/poe327-home%20(6).webp 1200w"
+                    fetchpriority="high"
+                />
+            </Head>
             <SEOHead
                 title='PoE 3.27 Keepers of the Flame - Complete Guide'
                 description='Complete PoE 3.27 guides: Breach modernization, Genesis Tree, dual-class builds, asynchronous trading. Master Path of Exile 3.27 Keepers of the Flame.'
@@ -40,7 +51,19 @@ export default function Home({ guides }) {
             <Navigation />
             
             {/* Hero Section */}
-            <section className="pt-32 hero-section relative" style={{ backgroundImage: "url('/assets/images/poe327-home%20(6).webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', minHeight: '600px' }}>
+            <section className="pt-32 hero-section relative" style={{ minHeight: '600px' }}>
+                {/* 首屏大图使用 Next/Image 优先加载，替代 CSS 背景图 */}
+                <div className="absolute inset-0 -z-10">
+                    <Image 
+                        src="/assets/images/poe327-home%20(6).webp"
+                        alt="PoE 3.27 Hero"
+                        fill
+                        priority
+                        fetchPriority="high"
+                        sizes="100vw"
+                        className="object-cover"
+                    />
+                </div>
                 <div className="absolute inset-0 bg-black bg-opacity-70"></div>
                 <div className="absolute inset-0">
                     <div className="absolute top-20 left-10 w-32 h-32 border-2 border-orange-500 border-opacity-20 rounded-full"></div>

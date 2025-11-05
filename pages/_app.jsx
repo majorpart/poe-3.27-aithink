@@ -14,6 +14,8 @@ export default function App({ Component, pageProps }) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
                 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet" />
+                {/* 为 FundingChoices 预连接，减少握手延迟 */}
+                <link rel="preconnect" href="https://fundingchoicesmessages.google.com" />
             </Head>
             {/* Tailwind 配置需先于 CDN 脚本注入 */}
             <Script
