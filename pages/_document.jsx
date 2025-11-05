@@ -18,7 +18,35 @@ export default function Document() {
                 {/* Theme Color */}
                 <meta name="theme-color" content="#0a0a0a" />
                 <meta name="msapplication-TileColor" content="#0a0a0a" />
-                
+
+                {/* Tailwind CDN 在文档级 Head 提前加载，减少首屏未样式闪烁 */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.tailwind = window.tailwind || {};
+                            window.tailwind.config = {
+                                theme: {
+                                    extend: {
+                                        colors: {
+                                            'primary-bg': '#0a0a0a',
+                                            'secondary-bg': '#252525',
+                                            'card-bg': '#2d2d2d',
+                                            'text-primary': '#ffffff',
+                                            'text-secondary': '#e0e0e0',
+                                            'text-muted': '#999999',
+                                            'accent-flame': '#ff6600',
+                                            'accent-flame-hover': '#ff8800',
+                                            'accent-gold': '#ffb84d',
+                                            'border-dark': '#404040'
+                                        }
+                                    }
+                                }
+                            };
+                        `
+                    }}
+                />
+                <script src="https://cdn.tailwindcss.com"></script>
+
             </Head>
             <body>
                 <Main />
